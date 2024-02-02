@@ -1,7 +1,7 @@
 syntax = "proto3";
 
-package pb;
-option go_package = "github.com/prabhjout/Train-Ticket-App/api/pb";
+option java_package = "com.train.grpc";
+option java_outer_classname = "TrainTicketAppProtos";
 
 service TrainTicketApp {
   rpc PurchaseTicket(PurchaseTicketRequest) returns (PurchaseTicketResponse);
